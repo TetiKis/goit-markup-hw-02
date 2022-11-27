@@ -1,0 +1,141 @@
+:root {
+    --primary-text-color: #434455;
+    --primary-white-color: #ffffff;
+    --second-text-color: #2E2F42;
+    --footer-text-color: #E7E9FC;
+    --logo-web-color: #4D5AE5;
+    --second-background-color: #F4F4FD;
+}
+
+/* General */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.list {
+    list-style: none;
+}
+
+.section-title {
+    color: var(--second-text-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11; 
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.list-title {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* Logo */
+.logo {
+    color: var(--logo-web-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo-top {
+    color: var(--second-text-color);
+}
+
+footer .logo {
+    line-height: 1.16;
+}
+
+.logo-bott {
+    color: var(--second-background-color);
+    line-height: 1.16;
+}
+
+/* header */
+
+/* navigation */
+.site-nav .link {
+    text-decoration: none;
+    color: var(--second-text-color);
+    font-weight: 600;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-text-color)
+}
+
+.site-nav .link:active {
+    color: var(--logo-web-color);
+}
+
+/* Contact */
+.contact .link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+
+/* main */
+.hero {
+    background-color: var(--second-text-color);
+}
+
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+button {
+    background-color:var(--logo-web-color);
+    color: var(--primary-white-color);
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+/* selection 1 */
+
+.title-hidden {
+    display: none;
+}
+
+
+/* footer*/
+footer {
+    background-color: #2E2F42;
+    line-height: 21px;
+}
+
+.footer-text {
+    color: var(--footer-text-color);
+}
+
+
+
+/* Portfolio - Filtrs */
+
+.list .portfolio {
+    background-color: var(--second-background-color);
+    color: var(--logo-web-color);
+ }
