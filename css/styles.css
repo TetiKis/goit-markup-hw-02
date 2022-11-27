@@ -11,13 +11,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .list {
@@ -27,7 +29,7 @@ body {
 .section-title {
     color: var(--second-text-color);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11; 
     text-align: center;
@@ -36,15 +38,15 @@ body {
 
 .list-title {
     color: var(--second-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
 
+
 /* Logo */
 .logo {
     color: var(--logo-web-color);
-    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -70,9 +72,8 @@ footer .logo {
 
 /* navigation */
 .site-nav .link {
-    text-decoration: none;
     color: var(--second-text-color);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .site-nav .link:hover,
@@ -86,10 +87,13 @@ footer .logo {
 
 /* Contact */
 .contact .link {
-    text-decoration: none;
     color: var(--primary-text-color);
 }
 
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--logo-web-color)
+}
 
 /* main */
 .hero {
@@ -98,7 +102,7 @@ footer .logo {
 
 .hero-title {
     color: var(--primary-white-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -108,10 +112,14 @@ button {
     background-color:var(--logo-web-color);
     color: var(--primary-white-color);
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.04em;
     cursor: pointer;
+}
+
+button:active {
+    background-color: #404BBF;
 }
 
 /* selection 1 */
@@ -120,11 +128,16 @@ button {
     display: none;
 }
 
+/* Selection 3 */
 
-/* footer*/
+.team {
+    background-color: var(--second-background-color);
+}
+
+
+/* footer */
 footer {
     background-color: #2E2F42;
-    line-height: 21px;
 }
 
 .footer-text {
@@ -138,4 +151,11 @@ footer {
 .list .portfolio {
     background-color: var(--second-background-color);
     color: var(--logo-web-color);
+ }
+
+ .list .portfolio:hover,
+ .list .portfolio:focus,
+ .list .portfolio:active {
+    color: var(--primary-white-color);
+    background-color: var(--logo-web-color);
  }
